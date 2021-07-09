@@ -1,0 +1,1 @@
+Repositório criado para armazenar meus projetos feitos na Trybe porém com algumas modificações e acréscimos, para estilizar ou até mesmo melhorar o código base feito a partir dos requisitos do projeto!
