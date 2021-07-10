@@ -19,7 +19,7 @@ document.addEventListener('click', function (event) {
       let item = allListItens[index];
       item.style.backgroundColor = 'white';
     }
-    event.target.style.backgroundColor = 'rgb(128, 128, 128)';
+    event.target.style.backgroundColor = 'lightgrey';
   }
 }, false);
 

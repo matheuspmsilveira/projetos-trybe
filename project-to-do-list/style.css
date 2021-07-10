@@ -1,3 +1,37 @@
 .completed {
   text-decoration: line-through;
 }
+
+body {
+  background-color: green;
+  padding: 20%;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  background-color: white;
+  padding: 5%;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.buttons {
+  margin-bottom: 10%;
+}
+
+li {
+  text-align: left;
+}
+
+button {
+  background-color: blueviolet;
+  border: blueviolet;
+  color: white;
+  border-radius: 10px;
+}
+
+.paragraph-funcionamento {
+  font-style: italic;
+  font-size: 12px;
+}
