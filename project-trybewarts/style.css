@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.trybewarts-header-logo {
+  height: 100px;
+}
+
+.trybewarts-login {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  margin-left: 10vw;
+  margin-right: 5vw;
+}
+
+.radios-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-avaliacao {
+  display: flex;
+  margin-bottom: 2vh;
+}
+
+.house {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.house label {
+  width: 20%;
+}
+
+.learn-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 60%;
+}
+
+#evaluation-form h1 {
+  align-self: center;
+  margin-bottom: 3vh;
+}
+
+.g-2 {
+  margin-bottom: 1vh;
+}
+
+#label-rate {
+  margin-right: 1vw;
+}
+
+.avaliacao {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.second-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+}
+
+.infos-container {
+  margin: 2vh 0;
+}
+
+.infos-container label {
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: purple;
+  color: white;
+}
+
+footer {
+  align-self: center;
+  padding-top: 2vh;
+  margin-top: 10vh;
+  background-color: #3c404a;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+#trybewarts-forms-logo {
+  margin-right: 10vw;
+}
