@@ -1,3 +1,7 @@
+window.onload = function() {
+  listaTarefas.innerHTML = localStorage.getItem('list');
+};
+
 function addListItem () {
   const addButton = document.querySelector('#criar-tarefa');
   const inputText = document.querySelector('#texto-tarefa');
@@ -19,7 +23,7 @@ document.addEventListener('click', function (event) {
       let item = allListItens[index];
       item.style.backgroundColor = 'white';
     }
-    event.target.style.backgroundColor = 'rgb(128, 128, 128)';
+    event.target.style.backgroundColor = 'lightgrey';
   }
 }, false);
 
@@ -59,3 +63,26 @@ function clearFinalized () {
   })
 }
 clearFinalized();
+
+const listaTarefas = document.getElementById('lista-tarefas');
+function saveList () {
+  localStorage.setItem('list', listaTarefas.innerHTML);
+  alert('Conteudo salvo!');
+}
+
+const saveButton = document.getElementById('salvar-tarefas');
+saveButton.addEventListener('click', saveList);
+
+function removeSelected () {
+  const removeSelectedButton = document.getElementById('remover-selecionado');
+  removeSelectedButton.addEventListener('click', function () {
+    const listItens = document.querySelectorAll('.list-item');
+    for (let index = 0; index < listItens.length; index += 1) {
+      let element = listItens[index];
+      if (element.style.backgroundColor === 'lightgrey') {
+        element.remove();
+      }
+    }
+  })
+};
+removeSelected();
